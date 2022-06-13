@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:login/login.dart';
+import 'resa.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: _title,
+        routes: {
+          "/reservations": (context) => Test() 
+        },
         home: Scaffold(
           appBar: AppBar(title: const Text(_title)),
           body: const Login(),
